@@ -4,7 +4,9 @@ let average = 0;
 
 for (let item of numbers) {
     sum = average + item;
-    // sum += item;
+    average++;
 }
+sum = average / sum; 
 
 console.log(average)
+//calcular la media de los numeros del array ```numbers```. Recuerda que para calcular el promedio necesitarás la suma de los números, pero también la cantidad de números que has sumado.

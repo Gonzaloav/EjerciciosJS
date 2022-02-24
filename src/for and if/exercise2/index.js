@@ -9,3 +9,4 @@ for (let item of numbers) {
 }
 
 console.log(counter);
+// completa el código de para contar cuantos elementos hay en el array ```number```.
