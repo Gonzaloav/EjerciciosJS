@@ -1,5 +1,5 @@
-/**Modifica el fichero [index.js](index.js) creando una función de nombre ```swap``` que calcule intercambie
- *  la posición de dos elementos de un array. La función se emplearía de la siguiente manera:
+/**Modifica el fichero [index.js](index.js) creando una función de nombre ```swap``` que calcule  y 
+ * intercambie la posición de dos elementos de un array. La función se emplearía de la siguiente manera:
 ```javascript
 const numbers = [21,22,23,24];
 swap(1,3,numbers);
@@ -10,22 +10,12 @@ console.log(numbers); // -> [21,24,23,22]
 
 const numbers = [11,12,13,14]
 
-function minorInRange(a,b,array){
-    let minor = array[a]
-    for(let idx = a; idx <= b;idx++){
-        if(array[idx] < minor){
-            minor = array[idx]
-        }
-    }
-    return minor
+function swap(pos1, pos2, arraynum) {
+    const temp = arraynum[pos1];
+    arraynum[pos1] = arraynum[pos2];
+    arraynum[pos2] = temp;
+
 }
-console.log(minorInRange(0,3,numbers));
-console.log(minorInRange(2,3,numbers));
-console.log(minorInRange(1,3,numbers));
-
-
-
-// Put your code here
 
 swap(0,3,numbers);
 console.log(numbers);
