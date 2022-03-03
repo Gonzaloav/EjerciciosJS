@@ -1,3 +1,4 @@
+
 /**Ya has creado una función para buscar el menor número de un array. 
  * Vas a modificarla de manera que busque el menor número entre dos determinados índices del array 
  * al final del mismo. Hazlo en el [index.js](index.js) creando una función de nombre ```minorInRange```. 
@@ -14,11 +15,12 @@ const numbers = [11,9,13,12]
 function minorInRange(pos1, pos2, arraynum) {
     let menor = arraynum[pos1];
         for (let i = pos1; i < pos2; i++) {
-            const element = array[index];
-            
-        }
-
+            if (arraynum[i]<menor)
+            menor = arraynum[i];
+        return menor;
 }
+}
+
 
 console.log(minorInRange(0,3,numbers));
 console.log(minorInRange(2,3,numbers));
