@@ -1,3 +1,14 @@
+/**# By myself
+
+¿Puede una función hacer referencia a si misma?. Pues sí. Se llama recursividad.
+
+Tienes un ejemplo en el fichero [example.js](example.js).
+
+Fíjate en la función ```sort``` en ese fichero. Intenta analizar, con lápiz y papel, 
+cómo funciona. ¿Qué información recibe la función cada vez que se ejecuta?.
+ * 
+ */
+
 const numbers = [11,9,13,12,0,2,99,2,34,5,4,9,22,16,76,35,75,2,35,8,74]
 
 function minorInRange (start, end, array) {
