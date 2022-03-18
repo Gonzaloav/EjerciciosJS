@@ -1,3 +1,6 @@
+/**Crea una función sort que ordene los participantes por su tiempo, 
+ * de la persona más rápida a la más lenta.*/
+
 const chrono = [
     {
         name: "Ana",
@@ -21,4 +24,20 @@ const chrono = [
     },
 ]
 
-// Put you code here
+console.log(chrono.length);
+
+function sort(objeto) {
+    for (let i = 0; i < objeto.length; i++) {
+
+        for (let z = 0; z < objeto.length; z++) {
+
+            if (objeto[i].time > objeto[z].time) {
+                idxmenor = objeto[z];
+                objeto[z] = objeto[i];
+                objeto[i] = idxmenor;}	  
+    }	 
+}	
+console.log(objeto);	
+}	
+sort(chrono);	          
+console.log(JSON.stringify(chrono));
